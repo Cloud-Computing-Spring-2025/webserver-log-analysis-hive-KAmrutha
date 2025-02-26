@@ -193,12 +193,12 @@ docker cp resourcemanager:/opt/hadoop-2.7.4/share/hadoop/mapreduce/output/ ./ou
 Sample Input  - web_server_logs.csv
 
 ## Output
-1. 
+1. Total Requests Count
 ```
  	total_requests
 1	101
 ```
-2. 
+2. Status Code Distribution
 ``` 
  	status	request_count
 1	200	57
@@ -207,14 +207,14 @@ Sample Input  - web_server_logs.csv
 4	NULL	1
 ```
 
-3. 
+3. Top 3 Most Visited Pages
 ```
   	url	visit_count
 1	/products	24
 2	/contact	24
 3	/home	20
 ```
-4. 
+4. Traffic Sources by User-Agent
 ```
  	user_agent	agent_count
 1	Edge/88.0	23
@@ -225,7 +225,7 @@ Sample Input  - web_server_logs.csv
 6	user_agent	1
 
 ```
-5. 
+5. Identifying Suspicious IPs with High Failure Requests
 ```
  	ip	failed_request_count
 1	192.168.1.3	9
@@ -235,7 +235,7 @@ Sample Input  - web_server_logs.csv
 5	192.168.1.1	5
 6	192.168.1.25	4
 ```
-6. 
+6. Traffic Trends Over Time
 ```
  	_c0
 1	2024-02-01 10:15 7
